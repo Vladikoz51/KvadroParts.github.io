@@ -1,0 +1,107 @@
+$background-header: rgba(42,44,43,1);
+$text-red: rgba(204,57,50,1);
+$background-dark: rgba(51,51,51,1);
+$background-red: rgba(204,57,50,1);
+$background-blue: rgba(63,169,218,1);
+$border-gray: rgba(124,124,124,1);
+$text-gray: rgba(142,136,136,1);
+$white: rgba(255,255,255,1);
+$black: rgba(0,0,0,1);
+$breadcrumbs-back: rgba(85,85,85,1);
+$breadcrumbs-text: rgba(153,196,38,1);
+$button-gray: rgba(93,93,93,1);
+
+@mixin font($family, $weight, $size, $transform, $height, $color) {
+  font-family: $family, "Arial", sans-serif;
+  font-weight: $weight;
+  font-size: $size;
+  text-transform: $transform;
+  line-height: $height;
+  color: $color;
+}
+
+%font-trebuchet {
+  @include font("TrebuchetMS",normal ,36px ,uppercase ,48px, $text-red);
+}
+
+%font-calibri-normal {
+  @include font("Calibri",normal ,20px ,none ,30px, $white);
+}
+
+%font-calibri-content {
+  @include font("Calibri",normal ,16px ,none ,20px, $white);
+}
+
+%font-calibri-bold {
+  @include font("Calibri-Bold",normal ,40px ,uppercase ,48px, $white);
+}
+
+body {
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,h2,h3,p {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  outline: none;
+}
+
+@font-face {
+  font-family: "TrebuchetMS";
+  src: local("TrebuchetMS"), url("../fonts/TrebuchetMS.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; 
+}
+
+@font-face {
+  font-family: "Calibri";
+  src: local("Calibri"), url("../fonts/Calibri.woff2") format("woff2"), url("../fonts/Calibri.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; 
+}
+
+@font-face {
+  font-family: "Calibri-Bold";
+  src: local("Calibri-Bold"), url("../fonts/Calibri-Bold.woff2") format("woff2"), url("../fonts/Calibri-Bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; 
+}
+

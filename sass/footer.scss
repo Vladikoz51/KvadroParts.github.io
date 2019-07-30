@@ -1,0 +1,34 @@
+.footer {
+  background-color: $background-dark;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center;
+}
+
+.footer__logo-and-button-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__logo-icon {
+  display: block;
+  width: 197px;
+  height: 54px;
+}
+
+.footer__up-button {
+  width: 48px;
+  height: 48px;
+  margin-right: 5%;
+  display: block;
+}
+
+.footer__copywright {
+  @extend %font-calibri-normal;
+  font-size: 10px;
+  line-height: 12px;
+  text-transform: uppercase;
+  margin-left: 20px;
+}

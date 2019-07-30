@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Guepard двигатель</title>
+</head>
+<body>
+  <!-- inject:header:html -->
+  
+  <header class="header">
+  <section class="header__logo-and-menu-icons">
+    <a class="header__logo-icon" href="index.html">
+      <img class="header__logo-kvadroparts" src="img/svg/quadroparts-logo.svg" alt="quadroparts-logo">
+    </a>
+    <button class="header__menu-icon-container" type="button">
+      <svg class="header__menu-icon menu-icon"
+	 viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;">
+        <style type="text/css">
+          .menu-icon__line{fill:#ffffff;}
+        </style>
+        <path class="menu-icon__line menu-icon__line-1" d="M24,3c0-0.6-0.4-1-1-1H1C0.4,2,0,2.4,0,3v2c0,0.6,0.4,1,1,1h22c0.6,0,1-0.4,1-1V3z"/>
+        <path class="menu-icon__line menu-icon__line-2" d="M24,11c0-0.6-0.4-1-1-1H1c-0.6,0-1,0.4-1,1v2c0,0.6,0.4,1,1,1h22c0.6,0,1-0.4,1-1V11z"/>
+        <path class="menu-icon__line menu-icon__line-3" d="M24,19c0-0.6-0.4-1-1-1H1c-0.6,0-1,0.4-1,1v2c0,0.6,0.4,1,1,1h22c0.6,0,1-0.4,1-1V19z"/>
+        <path class="menu-icon__line menu-icon__line-4" class="st0" d="M20.3,2.3c-0.4-0.4-1-0.4-1.5,0L2.4,18.8c-0.4,0.4-0.5,1,0,1.5l1.4,1.4c0.4,0.4,1,0.4,1.5,0L21.7,5.2
+          c0.4-0.4,0.5-1,0-1.5L20.3,2.3z"/>
+        <path  class="menu-icon__line menu-icon__line-5" d="M3.7,2.3c0.4-0.4,1-0.4,1.5,0l16.5,16.5c0.4,0.4,0.5,1,0,1.5l-1.4,1.4c-0.4,0.4-1,0.4-1.5,0L2.4,5.2
+          c-0.4-0.4-0.5-1,0-1.5L3.7,2.3z"/>
+      </svg>
+    </button>
+  </section>
+  <section class="header__drop-down-menu">
+    <ul class="header__menu-list">
+      <li class="header__menu-item menu-item--search">
+        <input class="header__search-field" type="text" placeholder="Поиск..." name="search-field" id="search-field" >
+        <label class="header__search-icon-container" for="search-field">
+          <img src="img/svg/search.svg" alt="search-icon">
+        </label>
+      </li>
+      <li class="header__menu-item menu-item">
+        <a class="menu-item-link" href="index.html">Главная</a>
+      </li>
+      <li class="header__menu-item header__menu-item--scheme">
+        <ul class="header__menu-subitem-list">
+          <li class="header__menu-subitem header__menu-subitem--scheme">
+            <a class="menu-item-link">Устройство квадроцикла</a>
+            <button class="header__submenu-button" type="button">
+              <img src="img/svg/menu-arrow-icon.svg" alt="menu-arrow-icon">
+            </button>
+          </li>
+          <li class="header__menu-subitem header__menu-subitem--scheme">
+            <a href="scheme.html" class="menu-item-link">Принципиальная схема</a>
+          </li>
+          <li class="header__menu-subitem header__menu-subitem--scheme">
+            <a href="" class="menu-item-link">Анимация работы узлов</a>
+          </li>
+        </ul>
+      </li>
+      <li class="header__menu-item header__menu-item--producer">
+        <ul class="header__menu-subitem-list">
+          <li class="header__menu-subitem header__menu-subitem--producer">
+            <a class="menu-item-link">Производители</a>
+            <button class="header__submenu-button " type="button">
+              <img src="img/svg/menu-arrow-icon.svg" alt="menu-arrow-icon">
+            </button>
+          </li>
+          <li class="header__menu-subitem header__menu-subitem--producer">
+            <a href="brands--stels.html" class="menu-item-link">Stels</a>
+          </li>
+          <li class="header__menu-subitem header__menu-subitem--producer">
+            <a href="brands--RM.html" class="menu-item-link">Русская механика</a>
+          </li>
+          <li class="header__menu-subitem header__menu-subitem--producer">
+            <a href="brands--cfmoto.html" class="menu-item-link">CF Moto</a>
+          </li>
+          <li class="header__menu-subitem header__menu-subitem--producer">
+            <a href="" class="menu-item-link">Brp</a>
+          </li>
+          <li class="header__menu-subitem header__menu-subitem--producer">
+            <a href="" class="menu-item-link">yamaha</a>
+          </li>
+          <li class="header__menu-subitem header__menu-subitem--producer">
+            <a href="" class="menu-item-link">polaris</a>
+          </li>
+        </ul> 
+      </li>
+    </ul>
+  </section>
+</header>
+  
+  <!-- endinject -->
+  <section class="breadcrumbs">
+    <ul class="breadcrumbs__list">
+      <li class="breadcrumbs__item">
+        <a class="breadcrumbs__item-link" href="index.html">Главная</a>
+      </li>
+      <li class="breadcrumbs__item">
+        <a class="breadcrumbs__item-link">Производители</a>
+      </li>
+      <li class="breadcrumbs__item">
+        <a class="breadcrumbs__item-link" href="#">Stels</a>
+      </li>
+      <li class="breadcrumbs__item">
+        <a class="breadcrumbs__item-link" href="#">Guepard(запчасти)</a>
+      </li>
+      <li class="breadcrumbs__item">
+        <a class="breadcrumbs__item-link" href="#">Двигатель</a>
+      </li>
+    </ul>
+  </section>
+  <section class="spareparts">
+    <h2 class="spareparts__headline">Двигатель</h2>
+    <ul class="spareparts__list">
+      <li class="spareparts__item">
+        <h3 class="spareparts__item-headline">Stels Guepard 650</h3>
+        <img src="img/engine-guepard-650.png" alt="engine-guepard-650" width="200" height="171" class="spareparts__item-image">
+        <ul class="spareparts__specification-list">
+          <li class="spareparts__specification-item">
+            <p class="spareparts__specification-item-annotation">Наименование:</p>
+            <p class="spareparts__specification-item-content">GK2V82MT.</p>
+          </li>
+          <li class="spareparts__specification-item">
+            <p class="spareparts__specification-item-annotation">Завод-изготовитель:</p>
+            <p class="spareparts__specification-item-content">Gaokin-industry, Китай.</p>
+          </li>
+          <li class="spareparts__specification-item">
+            <p class="spareparts__specification-item-annotation">Тип двигателя:</p>
+            <p class="spareparts__specification-item-content">4-тактный, двухцилиндровый, водяное охлаждение, 8 клапанов.</p>
+          </li>
+          <li class="spareparts__specification-item">
+            <p class="spareparts__specification-item-annotation">Объем двигателя:</p>
+            <p class="spareparts__specification-item-content">650cc.</p>
+          </li>
+          <li class="spareparts__specification-item">
+            <p class="spareparts__specification-item-annotation">Компрессия:</p>
+            <p class="spareparts__specification-item-content">10,5: 1.</p>
+          </li>
+          <li class="spareparts__specification-item">
+            <p class="spareparts__specification-item-annotation">Максимальная мощность и обороты кВт (л.с.) / об / мин:</p>
+            <p class="spareparts__specification-item-content">39 (53) / 6250.</p>
+          </li>
+          <li class="spareparts__specification-item">
+            <p class="spareparts__specification-item-annotation">Максимальный крутящий момент и об / мин:</p>
+            <p class="spareparts__specification-item-content">58/5750.</p>
+          </li>
+          <li class="spareparts__specification-item">
+            <p class="spareparts__specification-item-annotation">Минимальный Постоянный холостой ход об / мин:</p>
+            <p class="spareparts__specification-item-content">1200 ± 100.</p>
+          </li>
+        </ul>
+      </li>
+      <li class="spareparts__item">
+        <h3 class="spareparts__item-headline">Stels Guepard 800</h3>
+        <img src="img/engine-guepard-800.png" alt="engine-guepard-800" width="200" height="159" class="spareparts__item-image">
+        <ul class="spareparts__specification-list">
+          <li class="spareparts__specification-item">
+            <p class="spareparts__specification-item-annotation">Наименование:</p>
+            <p class="spareparts__specification-item-content">GK2V91MW.</p>
+          </li>
+          <li class="spareparts__specification-item">
+            <p class="spareparts__specification-item-annotation">Завод-изготовитель:</p>
+            <p class="spareparts__specification-item-content">Gaokin-industry, Китай.</p>
+          </li>
+          <li class="spareparts__specification-item">
+            <p class="spareparts__specification-item-annotation">Тип двигателя:</p>
+            <p class="spareparts__specification-item-content">4-тактный, двухцилиндровый, водяное охлаждение, 8 клапанов.</p>
+          </li>
+          <li class="spareparts__specification-item">
+            <p class="spareparts__specification-item-annotation">Объем двигателя:</p>
+            <p class="spareparts__specification-item-content">800cc.</p>
+          </li>
+          <li class="spareparts__specification-item">
+            <p class="spareparts__specification-item-annotation">Компрессия:</p>
+            <p class="spareparts__specification-item-content">10,5: 1.</p>
+          </li>
+          <li class="spareparts__specification-item">
+            <p class="spareparts__specification-item-annotation">Максимальная мощность и обороты кВт (л.с.) / об / мин:</p>
+            <p class="spareparts__specification-item-content">45 (61) / 6250.</p>
+          </li>
+          <li class="spareparts__specification-item">
+            <p class="spareparts__specification-item-annotation">Максимальный крутящий момент и об / мин:</p>
+            <p class="spareparts__specification-item-content">72/5000.</p>
+          </li>
+          <li class="spareparts__specification-item">
+            <p class="spareparts__specification-item-annotation">Минимальный Постоянный холостой ход об / мин:</p>
+            <p class="spareparts__specification-item-content">1200 ± 100.</p>
+          </li>
+        </ul>
+      </li>
+      <li class="spareparts__item">
+        <h3 class="spareparts__item-headline">Stels Guepard 850</h3>
+        <img src="img/engine-guepard-850.png" alt="engine-guepard-800" width="200" height="166" class="spareparts__item-image">
+        <ul class="spareparts__specification-list">
+          <li class="spareparts__specification-item">
+            <p class="spareparts__specification-item-annotation">Наименование:</p>
+            <p class="spareparts__specification-item-content">GK2V92MW.</p>
+          </li>
+          <li class="spareparts__specification-item">
+            <p class="spareparts__specification-item-annotation">Завод-изготовитель:</p>
+            <p class="spareparts__specification-item-content">Gaokin-industry, Китай.</p>
+          </li>
+          <li class="spareparts__specification-item">
+            <p class="spareparts__specification-item-annotation">Тип двигателя:</p>
+            <p class="spareparts__specification-item-content">4-тактный, двухцилиндровый, водяное охлаждение, 8 клапанов.</p>
+          </li>
+          <li class="spareparts__specification-item">
+            <p class="spareparts__specification-item-annotation">Объем двигателя:</p>
+            <p class="spareparts__specification-item-content">850cc.</p>
+          </li>
+          <li class="spareparts__specification-item">
+            <p class="spareparts__specification-item-annotation">Компрессия:</p>
+            <p class="spareparts__specification-item-content">10,5: 1.</p>
+          </li>
+          <li class="spareparts__specification-item">
+            <p class="spareparts__specification-item-annotation">Максимальная мощность и обороты кВт (л.с.) / об / мин:</p>
+            <p class="spareparts__specification-item-content">48 (65) / 6250.</p>
+          </li>
+          <li class="spareparts__specification-item">
+            <p class="spareparts__specification-item-annotation">Максимальный крутящий момент и об / мин:</p>
+            <p class="spareparts__specification-item-content">75/5000.</p>
+          </li>
+          <li class="spareparts__specification-item">
+            <p class="spareparts__specification-item-annotation">Минимальный Постоянный холостой ход об / мин:</p>
+            <p class="spareparts__specification-item-content">1200 ± 100.</p>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <a class="spareparts__link spareparts__link--categories" href="">Другие запчасти</a>
+  </section>
+  <!-- inject:contacts:html -->
+  
+  <section class="contacts">
+  <h2 class="contacts__headline">Контакты</h2>
+  <p class="contacts__content">Все предложения по расширению и исправлению содержимого сайта направляйте по адресу vladikoz51@gmail.com , а также на мой профиль в Facebook и Twitter.</p>
+  <ul class="contacts__social">
+    <li class="contacts__social-item">
+      <a class="contacts__social-item-link" href="vladikoz51@gmail.com">
+        <img src="img/svg/mail-icon.svg" alt="mail-icon">
+      </a>
+    </li>
+    <li class="contacts__social-item">
+      <a class="contacts__social-item-link" href="https://www.facebook.com/profile.php?id=100008200397973">
+        <img src="img/svg/facebook-icon.svg" alt="facebook-icon">
+      </a>
+    </li>
+    <li class="contacts__social-item">
+      <a class="contacts__social-item-link" href="">
+        <img src="img/svg/twitter-icon.svg" alt="twitter-icon">
+      </a>
+    </li>
+  </ul>
+</section>
+  
+  <!-- endinject -->
+  <!-- inject:site-map:html -->
+  
+  <section class="site-map">
+  <h2 class="site-map__headline">Карта сайта</h2>
+  <div class="site-map__section">
+    <h3 class="site-map__section-headline">Устройство квадроцикла</h3>
+    <ul class="site-map__section-list">
+      <li class="site-map__section-item">
+        <a class="site-map__section-item-link" href="scheme.html">Принципиальная схема</a>
+      </li>
+      <li class="site-map__section-item">
+          <a class="site-map__section-item-link" href="">Анимация работы узлов</a>
+      </li>
+    </ul>
+  </div>
+  <div class="site-map__section">
+    <h3 class="site-map__section-headline">Производители</h3>
+    <ul class="site-map__section-list">
+      <li class="site-map__section-item">
+        <a class="site-map__section-item-link" href="brands--stels.html">Stels</a>
+      </li>
+      <li class="site-map__section-item">
+        <a class="site-map__section-item-link" href="brands--RM.html">RM</a>
+      </li>
+      <li class="site-map__section-item">
+        <a class="site-map__section-item-link" href="brands--cfmoto.html">CFMoto</a>
+      </li>
+      <li class="site-map__section-item">
+        <a class="site-map__section-item-link" href="">BRP</a>
+      </li>
+      <li class="site-map__section-item">
+        <a class="site-map__section-item-link" href="">Yamaha</a>
+      </li>
+      <li class="site-map__section-item">
+        <a class="site-map__section-item-link" href="">Polaris</a>
+      </li>
+    </ul>
+  </div>
+</section>
+  
+  <!-- endinject -->
+  <!-- inject:footer:html -->
+  
+  <footer class="footer">
+  <div class="footer__logo-and-button-container">
+    <a class="footer__logo-icon" href="index.html">
+      <img src="img/svg/quadroparts-logo.svg" alt="quadroparts-logo">
+    </a>
+    <p class="footer__copywright">@ 2019 Kvadroparts. Все права защищены.</p>
+  </div>
+  <a class="footer__up-button" href="#">
+    <img src="img/svg/up-icon.svg" alt="up-icon">
+  </a>
+</footer>
+  
+  <!-- endinject -->
+  <script src="js/header.js"></script>
+  <script src="js/description-slider.js"></script>
+</body>
+</html>

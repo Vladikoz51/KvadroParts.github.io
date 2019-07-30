@@ -1,0 +1,39 @@
+.about-us {
+  background-color: $background-dark;
+  padding: 20px 0;
+}
+
+.about-us__headline {
+  @extend %font-calibri-normal;
+  font-size: 40px;
+  text-align: center;
+  line-height: 48px;
+  width: 280px;
+  margin: 0 auto;
+}
+
+.about-us__headline--bold {
+  @extend %font-calibri-bold;
+}
+
+.about-us__content {
+  @extend %font-calibri-normal;
+  margin: 0 10px;
+  text-align: justify;
+}
+
+@media screen and (min-width: 768px) {
+  .about-us__content {
+    font-size: 26px;
+    margin: 0 20px;
+    line-height: 34px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .about-us__content {
+    font-size: 30px;
+    margin: 0 40px;
+    line-height: 38px;
+  }
+}
